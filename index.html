@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programming Topics</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        
-        h1 {
-            text-align: center;
-        }
-        
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        li {
-            margin-bottom: 10px;
-        }
-        
-        a {
-            text-decoration: none;
-            color: #007bff;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Restaurant Website</title>
 </head>
 <body>
-    <h1>Programming Topics</h1>
-    <ul>
-        <li><a href="#">Introduction to Programming</a></li>
-        <li><a href="#">HTML and CSS Basics</a></li>
-        <li><a href="#">JavaScript Fundamentals</a></li>
-        <li><a href="#">Python Programming</a></li>
-        <li><a href="#">Java Programming</a></li>
-        <li><a href="#">C# Programming</a></li>
-        <li><a href="#">Data Structures and Algorithms</a></li>
-        <li><a href="#">Web Development</a></li>
-        <li><a href="#">Mobile App Development</a></li>
-        <li><a href="#">Database Management</a></li>
-        <li><a href="#">Software Engineering</a></li>
-        <li><a href="#">Artificial Intelligence</a></li>
-        <li><a href="#">Machine Learning</a></li>
-        <li><a href="#">Cybersecurity</a></li>
-        <li><a href="#">Cloud Computing</a></li>
-        <li><a href="#">DevOps</a></li>
-    </ul>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to our Restaurant</h1>
+    <p>Enjoy delicious food in a cozy atmosphere.</p>
+    <a href="#menu" class="btn">View Menu</a>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+      <img src="menu-item1.jpg" alt="Menu Item 1">
+      <h3>Menu Item 1</h3>
+      <p>Description of menu item 1.</p>
+    </div>
+    <div class="menu-item">
+      <img src="menu-item2.jpg" alt="Menu Item 2">
+      <h3>Menu Item 2</h3>
+      <p>Description of menu item 2.</p>
+    </div>
+    <!-- Add more menu items here -->
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Message"></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Restaurant Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
