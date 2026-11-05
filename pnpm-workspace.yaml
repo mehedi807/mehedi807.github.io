@@ -1,0 +1,13 @@
+packages:
+  - "."
+
+engineStrict: true
+pmOnFail: error
+saveExact: true
+strictPeerDependencies: true
+
+# eslint-config-next 16.4 supports ESLint 10, while one transitive plugin still
+# advertises an ESLint 9 peer range.
+peerDependencyRules:
+  allowedVersions:
+    eslint: "10.14.0"
