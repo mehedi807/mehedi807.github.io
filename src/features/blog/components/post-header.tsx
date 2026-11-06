@@ -15,6 +15,14 @@ export function PostHeader({ post }: { post: PostSummary }) {
       <p className={page.intro}>{post.summary}</p>
       <div className={page.meta}>
         <time dateTime={post.date}>{formatContentDate(post.date)}</time>
+        {post.updated && post.updated !== post.date && (
+          <span>
+            Updated{" "}
+            <time dateTime={post.updated}>
+              {formatContentDate(post.updated)}
+            </time>
+          </span>
+        )}
         <span>{post.minutes} min read</span>
       </div>
       <div style={{ marginTop: 18 }}>

@@ -3,6 +3,7 @@ export type PostSummary = Readonly<{
   title: string;
   summary: string;
   date: string;
+  updated: string | null;
   tags: readonly string[];
   placeholder: boolean;
   minutes: number;

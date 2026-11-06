@@ -76,7 +76,10 @@ confirmed scope.
 - All agreed routes have code, including the complete homepage, About, both
   searchable/filterable collection indexes, and statically generated MDX detail
   pages. Shared content blocks, theme controls, navigation, footer, error/not-found
-  recovery, and metadata are implemented. Build and rendered verification remain
+  recovery, and metadata are implemented. SEO includes canonical/social metadata,
+  structured data, sitemap/robots, file-based Google ownership verification, and
+  GitHub Pages directory-style exports. The canonical origin is
+  `https://mehedi807.github.io/`. Build and rendered verification remain
   the owner's responsibility under the explicit code-only instruction.
 
 ## Brand Commitments
@@ -132,5 +135,5 @@ confirmed scope.
   remain in the content collection.
 - Verified case-study detail, years, outcomes, project media, working-approach
   wording, featured-project selection, and the public resume asset.
-- Production origin, current external project URLs, and final owner approval of
-  the coded design and copy.
+- Current external project URLs and final owner approval of the coded design
+  and copy. The production origin is confirmed as `https://mehedi807.github.io/`.

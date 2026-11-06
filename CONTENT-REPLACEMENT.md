@@ -33,8 +33,8 @@ or performance benchmarks were invented.
 
 | ID  | Current placeholder or fallback                                                                                  | Where to replace it                                                                                                     | Replacement                                                                                                                                                                                             |
 | --- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| P01 | Production origin is unset/example. The site is noindex, robots disallows crawling, and the sitemap is empty.    | `.env.local` or hosting environment; `src/config/site.ts`                                                               | Set `NEXT_PUBLIC_SITE_URL` to the real origin, such as `https://your-domain.tld`. Do not include a route or deployment subdirectory. Rebuild after changing it.                                         |
-| P02 | No résumé PDF. About shows a working **Request my résumé** email link.                                           | `NEXT_PUBLIC_RESUME_URL`; `public/files/`                                                                               | Add the real PDF and set `/files/mehedi-hasan-resume.pdf`, or use an HTTPS URL. Leave empty to keep the email fallback. No fake PDF exists.                                                             |
+| P01 | Resolved: the production origin is `https://mehedi807.github.io/`.                                               | `site.url` in `src/config/site.ts`                                                                                      | No domain replacement is needed. Set `site.indexingEnabled` to false for preview exports. No environment file is needed. See `SEO.md`.                                                                  |
+| P02 | No résumé PDF. About shows a working **Request my résumé** email link.                                           | `site.resumeUrl` in `src/config/site.ts`; `public/files/`                                                               | Add the real PDF and set `resumeUrl` to `/files/mehedi-hasan-resume.pdf`, or use an HTTPS URL. Leave empty to keep the email fallback.                                                                  |
 | P03 | Cinderella uses the supplied storefront screenshot. Future entries without a cover use the typographic fallback. | Frontmatter in `src/content/projects/*.mdx`; images in `public/images/projects/`                                        | Set `cover` and `coverAlt` for each project. Index covers fit inside 16:10 frames and homepage previews inside 2:1 frames without cropping the screenshot. Use `<Figure>` for body images and captions. |
 | P04 | Cinderella remains marked **Draft case study**; `year` says **Year to confirm**.                                 | `src/content/projects/cinderella-couture.mdx`                                                                           | Confirm role/year, replace draft narrative and illustrative diagrams, add actual ownership/outcomes, remove draft body callouts, then set `placeholder: false`.                                         |
 | P05 | No project repository URLs. The source-code action is hidden.                                                    | Optional `sourceUrl` in each project frontmatter                                                                        | Add an HTTPS public repository link when appropriate. An absent field keeps the action hidden.                                                                                                          |
@@ -42,7 +42,8 @@ or performance benchmarks were invented.
 | P07 | No blog articles remain. The homepage writing section is hidden, and `/blog` shows an empty state.               | `src/content/blog/`                                                                                                     | Add original MDX articles using the example below. The homepage writing section returns automatically when an article is available.                                                                     |
 | P08 | Cinderella is the sole featured project.                                                                         | `featured` and `order` in project frontmatter                                                                           | Change `featured` and numeric `order`. Up to four featured entries appear. An empty featured set preserves a link to the full project index.                                                            |
 | P09 | Hero/contact wording and blog topic focus are initial editorial copy.                                            | `src/features/home/data/home-content.ts`, `src/features/home/components/contact-section.tsx`, and feature `data/` files | Review wording for your voice. Factual background is separated from the proposed working approach. Categories and tags derive from content.                                                             |
-| P10 | Social previews fall back to the original portrait when an origin is configured.                                 | `src/lib/metadata.ts`; optional content `cover`                                                                         | Add an approved social image and change the default or content cover. No generated portrait or artificial product screenshot is used.                                                                   |
+| P10 | Social previews fall back to the original opaque portrait.                                                       | `site.socialImage` in `src/config/site.ts`; optional content `cover`/`coverAlt`                                         | Optionally add a dedicated share image and update its path, alt text, width, and height. Per-content covers override the fallback.                                                                      |
+| P11 | Resolved: Google ownership verification uses the supplied HTML file.                                             | `public/googleef44720086433717.html`                                                                                    | Keep the supplied filename and contents unchanged when exporting and deploying. No verification environment variables or meta tags are needed. See `SEO.md`.                                            |
 
 ## Adding and editing a project
 
@@ -81,8 +82,10 @@ defaults to the title. Quote a numeric `year`, because the field is a string.
 `featured` defaults to false and `order` to 100. `cover`, `coverAlt`, `liveUrl`,
 and `sourceUrl` are optional. Links must be a root-relative path or HTTPS URL.
 
-`placeholder: true` displays a draft notice on the case study and excludes that
-detail URL from the sitemap. Review the body as well: setting the flag to false
+`placeholder: true` displays a draft notice on the case study, adds noindex to
+its detail page, and excludes it from the sitemap and article structured data.
+A collection containing only placeholders also has a noindex index page.
+Review the body as well: setting the flag to false
 does not remove draft callouts or illustrative captions inside MDX.
 
 `draft: true` removes an entry from indexes and static detail paths. Draft files
@@ -112,6 +115,11 @@ when dates match. Reading time is an estimate from the source. The homepage
 shows the latest three entries, hiding its writing section when there are none.
 Optional `cover` supplies the article's social
 preview; use `<Figure>` for images in the article itself.
+
+Optional `updated: "YYYY-MM-DD"` records a genuine content revision and must not
+precede the publication date. It supplies the visible updated date, social and
+structured-data modification dates, and sitemap `lastmod`; it is never generated
+from the build time. See `SEO.md` for the search and sharing setup.
 
 Delete samples or mark them `draft: true` to remove them. Empty collections have
 working empty states. Because Next static export requires nonempty params, an
@@ -166,7 +174,7 @@ files only; it is not a compiler for visitor-submitted or remote input.
 - Page colors and type roles: `src/app/tokens.css`; fonts: `src/app/fonts.ts`.
 - Recorded design rules and source-review limits: `DESIGN.md` and `.impeccable/`.
 
-Content, public files, and environment values are incorporated into the static
+Content, public files, and site configuration constants are incorporated into the static
 export. Changing them requires a new export. There is no runtime CMS, database,
 contact-form endpoint, or secret API key to configure.
 
@@ -185,7 +193,7 @@ pnpm build
 pnpm preview
 ```
 
-Before publishing, replace the domain, review draft/sample notices and diagrams,
+Before publishing, confirm the configured domain, review draft/sample notices and diagrams,
 confirm current project URLs, and choose whether to provide a résumé PDF.
 Exercise navigation, both search/filter interfaces, theme switching, article
 anchors, code copying, and narrow-screen layouts. Source review does not

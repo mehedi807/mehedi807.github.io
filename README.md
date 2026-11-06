@@ -26,11 +26,17 @@ validation was run during this code-only implementation pass.
 
 ## First setup
 
-Install the pinned dependencies with `pnpm install --frozen-lockfile`. Copy
-`.env.example` to `.env.local`, replace `NEXT_PUBLIC_SITE_URL` with the real
-production origin, and optionally set the résumé URL. An unset/example origin
-keeps the site noindex and leaves the sitemap empty. MDX compiles at export
-time; no Next.js server or external content service is needed after deployment.
+Install the pinned dependencies with `pnpm install --frozen-lockfile`. Site
+settings live in the `site` constant in `src/config/site.ts`; no environment file
+is needed. The canonical origin is `https://mehedi807.github.io/`. Set `resumeUrl`
+to a public PDF path or HTTPS URL, or leave it empty for the email-request link.
+`indexingEnabled` is true; setting it to false disables indexing for a preview
+export. Google ownership verification uses the supplied HTML file in `public/`.
+MDX compiles at export time; no Next.js server or external content service is
+needed after deployment.
+
+[SEO.md](SEO.md) documents sitemap/robots, canonical URLs, social previews,
+structured data, draft/empty collection indexing, and the owner's deployment checks.
 
 ## Requirements
 
@@ -95,8 +101,10 @@ at request time are unavailable, including Server Actions, cookies, redirects,
 rewrites, headers, ISR, and the default `next/image` optimization loader.
 Dynamic routes must provide every path at build time.
 
-Hosting-specific options such as `basePath`, `assetPrefix`, `trailingSlash`,
-and image-loader behavior are intentionally not configured.
+`trailingSlash: true` emits directory-style HTML for GitHub Pages, such as
+`out/about/index.html`. Canonical document URLs use matching trailing slashes.
+`public/.nojekyll` is included in the export. `basePath` and `assetPrefix` remain
+unset because the supplied domain hosts the site at the account root.
 
 ## Styling
 
