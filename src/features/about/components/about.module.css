@@ -1,0 +1,108 @@
+@layer components {
+  .introGrid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    align-items: start;
+    gap: clamp(32px, 6vw, 90px);
+    margin-block-end: 64px;
+  }
+  .portrait {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1.1;
+    object-fit: cover;
+    object-position: center bottom;
+    border-radius: 4px;
+    background: var(--surface);
+  }
+  .background {
+    max-width: 64ch;
+    margin: 24px 0 0;
+    color: var(--muted-foreground);
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  .expertise {
+    display: grid;
+    gap: 36px;
+  }
+  .expertise h3,
+  .approach h3,
+  .experience h3 {
+    margin: 0 0 12px;
+    font-size: 24px;
+    font-weight: 520;
+    letter-spacing: -0.025em;
+  }
+  .expertise p,
+  .approach p {
+    margin: 0;
+    color: var(--muted-foreground);
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  .expertise ul,
+  .experience ul {
+    padding-inline-start: 20px;
+    margin: 16px 0 0;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+  .approach {
+    display: grid;
+    gap: 28px;
+  }
+  .experience {
+    display: grid;
+    gap: 36px;
+  }
+  .period {
+    margin: 0 0 12px;
+    color: var(--muted-foreground);
+    font-size: 14px;
+  }
+  .role {
+    margin: 0;
+    font-size: 17px;
+  }
+  .education {
+    padding-block-start: 28px;
+    border-block-start: 1px solid var(--border);
+  }
+  .education h3 {
+    font-size: 21px;
+    line-height: 1.5;
+  }
+  .resume {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px 28px;
+    margin-block: 22px 10px;
+  }
+  .resume a {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 10px;
+    color: var(--foreground);
+    font-weight: 550;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+  .resume svg {
+    width: 20px;
+    height: 20px;
+  }
+  @media (max-width: 800px) {
+    .introGrid {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 28px;
+      margin-block-end: 40px;
+    }
+    .portrait {
+      width: 210px;
+    }
+  }
+}

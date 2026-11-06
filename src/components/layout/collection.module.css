@@ -1,0 +1,64 @@
+@layer components {
+  .filters {
+    display: grid;
+    gap: 18px;
+    margin-block-end: 32px;
+  }
+  .searchRow {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 20px;
+    align-items: end;
+  }
+  .singleSearch {
+    max-width: 760px;
+  }
+  .selectGroup label {
+    display: block;
+    margin-block-end: 7px;
+    color: var(--muted-foreground);
+    font-size: 13px;
+  }
+  .selectGroup select {
+    width: 100%;
+    min-height: 52px;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    color: var(--foreground);
+    font: inherit;
+    font-size: 16px;
+  }
+  .results {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-block: 12px 24px;
+    color: var(--muted-foreground);
+    font-size: 14px;
+  }
+  .results p {
+    margin: 0;
+  }
+  .reset {
+    min-height: 44px;
+    padding: 6px 0;
+    border: 0;
+    background: transparent;
+    color: var(--foreground);
+    font: inherit;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    cursor: pointer;
+  }
+  @media (max-width: 600px) {
+    .searchRow {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 14px;
+    }
+  }
+}

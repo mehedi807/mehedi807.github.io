@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-05T19:26:54Z",
+  "title": "Design System: Mehedi Hasan Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "background": {
+        "role": "neutral",
+        "displayName": "Sage paper",
+        "tonalRamp": [
+          "oklch(15% 0.01 135)",
+          "oklch(26% 0.02 135)",
+          "oklch(38% 0.025 135)",
+          "oklch(49% 0.03 135)",
+          "oklch(61% 0.03 135)",
+          "oklch(72% 0.025 135)",
+          "oklch(84% 0.02 135)",
+          "oklch(95% 0.01 135)"
+        ]
+      },
+      "foreground": {
+        "role": "neutral",
+        "displayName": "Green ink",
+        "tonalRamp": [
+          "oklch(15% 0.01 170)",
+          "oklch(26% 0.025 170)",
+          "oklch(38% 0.035 170)",
+          "oklch(49% 0.045 170)",
+          "oklch(61% 0.045 170)",
+          "oklch(72% 0.035 170)",
+          "oklch(84% 0.025 170)",
+          "oklch(95% 0.01 170)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Soft green wash",
+        "tonalRamp": [
+          "oklch(15% 0.01 135)",
+          "oklch(26% 0.025 135)",
+          "oklch(38% 0.035 135)",
+          "oklch(49% 0.04 135)",
+          "oklch(61% 0.04 135)",
+          "oklch(72% 0.035 135)",
+          "oklch(84% 0.025 135)",
+          "oklch(95% 0.01 135)"
+        ]
+      },
+      "muted-foreground": {
+        "role": "neutral",
+        "displayName": "Quiet green ink",
+        "tonalRamp": [
+          "oklch(15% 0.01 155)",
+          "oklch(26% 0.02 155)",
+          "oklch(38% 0.03 155)",
+          "oklch(49% 0.035 155)",
+          "oklch(61% 0.035 155)",
+          "oklch(72% 0.03 155)",
+          "oklch(84% 0.02 155)",
+          "oklch(95% 0.01 155)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Green accent",
+        "tonalRamp": [
+          "oklch(15% 0.015 165)",
+          "oklch(26% 0.035 165)",
+          "oklch(38% 0.055 165)",
+          "oklch(49% 0.07 165)",
+          "oklch(61% 0.07 165)",
+          "oklch(72% 0.055 165)",
+          "oklch(84% 0.035 165)",
+          "oklch(95% 0.015 165)"
+        ]
+      },
+      "accent-foreground": {
+        "role": "neutral",
+        "displayName": "Selection paper",
+        "tonalRamp": [
+          "oklch(15% 0.005 125)",
+          "oklch(26% 0.01 125)",
+          "oklch(38% 0.015 125)",
+          "oklch(49% 0.02 125)",
+          "oklch(61% 0.02 125)",
+          "oklch(72% 0.015 125)",
+          "oklch(84% 0.01 125)",
+          "oklch(95% 0.005 125)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Fine sage divider",
+        "tonalRamp": [
+          "oklch(15% 0.01 145)",
+          "oklch(26% 0.02 145)",
+          "oklch(38% 0.03 145)",
+          "oklch(49% 0.035 145)",
+          "oklch(61% 0.035 145)",
+          "oklch(72% 0.03 145)",
+          "oklch(84% 0.02 145)",
+          "oklch(95% 0.01 145)"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Focus green",
+        "tonalRamp": [
+          "oklch(15% 0.015 145)",
+          "oklch(26% 0.04 145)",
+          "oklch(38% 0.065 145)",
+          "oklch(49% 0.08 145)",
+          "oklch(61% 0.08 145)",
+          "oklch(72% 0.065 145)",
+          "oklch(84% 0.04 145)",
+          "oklch(95% 0.015 145)"
+        ]
+      },
+      "scroll-thumb": {
+        "role": "neutral",
+        "displayName": "Scrollbar green",
+        "tonalRamp": [
+          "oklch(15% 0.01 145)",
+          "oklch(26% 0.025 145)",
+          "oklch(38% 0.035 145)",
+          "oklch(49% 0.045 145)",
+          "oklch(61% 0.045 145)",
+          "oklch(72% 0.035 145)",
+          "oklch(84% 0.025 145)",
+          "oklch(95% 0.01 145)"
+        ]
+      },
+      "dark-background": {
+        "role": "neutral",
+        "displayName": "Deep green paper",
+        "tonalRamp": [
+          "oklch(15% 0.01 170)",
+          "oklch(26% 0.025 170)",
+          "oklch(38% 0.035 170)",
+          "oklch(49% 0.045 170)",
+          "oklch(61% 0.045 170)",
+          "oklch(72% 0.035 170)",
+          "oklch(84% 0.025 170)",
+          "oklch(95% 0.01 170)"
+        ]
+      },
+      "dark-foreground": {
+        "role": "neutral",
+        "displayName": "Pale sage ink",
+        "tonalRamp": [
+          "oklch(15% 0.01 130)",
+          "oklch(26% 0.02 130)",
+          "oklch(38% 0.025 130)",
+          "oklch(49% 0.03 130)",
+          "oklch(61% 0.03 130)",
+          "oklch(72% 0.025 130)",
+          "oklch(84% 0.02 130)",
+          "oklch(95% 0.01 130)"
+        ]
+      },
+      "dark-muted": {
+        "role": "neutral",
+        "displayName": "Deep green hover wash",
+        "tonalRamp": [
+          "oklch(15% 0.01 160)",
+          "oklch(26% 0.03 160)",
+          "oklch(38% 0.045 160)",
+          "oklch(49% 0.055 160)",
+          "oklch(61% 0.055 160)",
+          "oklch(72% 0.045 160)",
+          "oklch(84% 0.03 160)",
+          "oklch(95% 0.01 160)"
+        ]
+      },
+      "dark-muted-foreground": {
+        "role": "neutral",
+        "displayName": "Quiet pale green ink",
+        "tonalRamp": [
+          "oklch(15% 0.01 140)",
+          "oklch(26% 0.02 140)",
+          "oklch(38% 0.03 140)",
+          "oklch(49% 0.035 140)",
+          "oklch(61% 0.035 140)",
+          "oklch(72% 0.03 140)",
+          "oklch(84% 0.02 140)",
+          "oklch(95% 0.01 140)"
+        ]
+      },
+      "dark-accent": {
+        "role": "primary",
+        "displayName": "Pale citron accent",
+        "tonalRamp": [
+          "oklch(15% 0.015 115)",
+          "oklch(26% 0.04 115)",
+          "oklch(38% 0.065 115)",
+          "oklch(49% 0.085 115)",
+          "oklch(61% 0.085 115)",
+          "oklch(72% 0.065 115)",
+          "oklch(84% 0.04 115)",
+          "oklch(95% 0.015 115)"
+        ]
+      },
+      "dark-border": {
+        "role": "neutral",
+        "displayName": "Deep sage divider",
+        "tonalRamp": [
+          "oklch(15% 0.01 155)",
+          "oklch(26% 0.025 155)",
+          "oklch(38% 0.04 155)",
+          "oklch(49% 0.05 155)",
+          "oklch(61% 0.05 155)",
+          "oklch(72% 0.04 155)",
+          "oklch(84% 0.025 155)",
+          "oklch(95% 0.01 155)"
+        ]
+      },
+      "dark-focus": {
+        "role": "primary",
+        "displayName": "Pale focus green",
+        "tonalRamp": [
+          "oklch(15% 0.015 125)",
+          "oklch(26% 0.035 125)",
+          "oklch(38% 0.055 125)",
+          "oklch(49% 0.07 125)",
+          "oklch(61% 0.07 125)",
+          "oklch(72% 0.055 125)",
+          "oklch(84% 0.035 125)",
+          "oklch(95% 0.015 125)"
+        ]
+      },
+      "dark-scroll-thumb": {
+        "role": "neutral",
+        "displayName": "Dark-mode scrollbar green",
+        "tonalRamp": [
+          "oklch(15% 0.01 150)",
+          "oklch(26% 0.025 150)",
+          "oklch(38% 0.04 150)",
+          "oklch(49% 0.05 150)",
+          "oklch(61% 0.05 150)",
+          "oklch(72% 0.04 150)",
+          "oklch(84% 0.025 150)",
+          "oklch(95% 0.01 150)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Raised paper",
+        "tonalRamp": [
+          "oklch(15% 0.005 125)",
+          "oklch(26% 0.01 125)",
+          "oklch(38% 0.015 125)",
+          "oklch(49% 0.02 125)",
+          "oklch(61% 0.02 125)",
+          "oklch(72% 0.015 125)",
+          "oklch(84% 0.01 125)",
+          "oklch(95% 0.005 125)"
+        ]
+      },
+      "dark-surface": {
+        "role": "neutral",
+        "displayName": "Deep green surface",
+        "tonalRamp": [
+          "oklch(15% 0.01 160)",
+          "oklch(26% 0.025 160)",
+          "oklch(38% 0.035 160)",
+          "oklch(49% 0.045 160)",
+          "oklch(61% 0.045 160)",
+          "oklch(72% 0.035 160)",
+          "oklch(84% 0.025 160)",
+          "oklch(95% 0.01 160)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Personal statement",
+        "purpose": "Homepage statement. Medium override: clamp(2.55rem, 8.9vw, 4rem), line-height 1.1, tracking -0.035em."
+      },
+      "headline": {
+        "displayName": "Project note headline",
+        "purpose": "Balanced project headline with a 32ch maximum measure."
+      },
+      "title": {
+        "displayName": "Section title",
+        "purpose": "Selected-work heading; 21px at the medium breakpoint."
+      },
+      "introduction": {
+        "displayName": "Author note",
+        "purpose": "Biography and overview; 18px / 1.55 at the medium breakpoint, with the name at weight 620."
+      },
+      "body": {
+        "displayName": "Summary copy",
+        "purpose": "Project and post summaries, generally capped at 60–65ch; selected-work summary line-height becomes 1.65 at 720px."
+      },
+      "label": {
+        "displayName": "Navigation label",
+        "purpose": "Desktop navigation and email link."
+      },
+      "project-tab": {
+        "displayName": "Project selector",
+        "purpose": "Project names in the horizontal tab row."
+      },
+      "metadata": {
+        "displayName": "Quiet metadata",
+        "purpose": "Plain technology lists, dates, and reading time; display tags use a smaller 13px variation without enclosure."
+      },
+      "page-title": {
+        "displayName": "Interior page title",
+        "purpose": "Collection, detail, About, missing-page, and error headings with a 20ch maximum measure."
+      },
+      "section-title": {
+        "displayName": "Section title",
+        "purpose": "Shared section-heading and About section-label role."
+      },
+      "prose": {
+        "displayName": "Article reading",
+        "purpose": "Shared article and case-study reading voice, capped at 72ch; 17px / 1.8 at 600px."
+      },
+      "code": {
+        "displayName": "Code reading",
+        "purpose": "JetBrains Mono for fenced code; 13px at 600px. Inline code uses the same family at 0.82em."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-note",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Shared authored easing for the work arrow, selected-tab underline, and project note."
+      },
+      {
+        "name": "theme-hover",
+        "value": "background-color 160ms ease-out",
+        "purpose": "Theme-control hover wash; transition removed for reduced motion."
+      },
+      {
+        "name": "work-arrow",
+        "value": "transform 180ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "4px rightward shift on hover/focus. Reduced motion removes the transition, leaving the immediate state change."
+      },
+      {
+        "name": "tab-underline",
+        "value": "transform 200ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Selected underline scales from the left. Transition removed for reduced motion."
+      },
+      {
+        "name": "note-arrive",
+        "value": "240ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Visible panel moves from opacity 0.85 and translateY(5px) to opacity 1 and translateY(0). Animation removed for reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "article-max",
+        "value": "900px"
+      },
+      {
+        "name": "about-intro-max",
+        "value": "800px"
+      },
+      {
+        "name": "medium-max",
+        "value": "720px"
+      },
+      {
+        "name": "project-contact-max",
+        "value": "680px"
+      },
+      {
+        "name": "blog-row-max",
+        "value": "650px"
+      },
+      {
+        "name": "collection-prose-max",
+        "value": "600px"
+      },
+      {
+        "name": "small-max",
+        "value": "480px"
+      },
+      {
+        "name": "narrow-max",
+        "value": "380px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Work text action",
+      "kind": "button",
+      "refersTo": "work-link",
+      "description": "The hero's primary anchor action, including its authored arrow and keyboard outline.",
+      "html": "<a class=\"ds-work-link\" href=\"#work\">Take a look at my work<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></a>",
+      "css": ".ds-work-link{display:inline-flex;min-height:44px;align-items:center;gap:14px;color:var(--foreground);font-family:var(--type-body);font-size:16px;font-weight:600;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px}.ds-work-link svg{width:25px;height:25px;transition:transform 180ms cubic-bezier(0.16,1,0.3,1)}.ds-work-link:hover svg,.ds-work-link:focus-visible svg{transform:translateX(4px)}.ds-work-link:focus-visible{outline:2px solid var(--focus);outline-offset:3px}@media(max-width:480px){.ds-work-link{gap:8px;font-size:14px;text-underline-offset:5px}.ds-work-link svg{width:19px;height:19px;flex-shrink:0}}@media(max-width:380px){.ds-work-link{font-size:16px}}@media(prefers-reduced-motion:reduce){.ds-work-link svg{transition:none}}"
+    },
+    {
+      "name": "Theme icon control",
+      "kind": "button",
+      "refersTo": "theme-toggle",
+      "description": "Visual sample of the mounted light-state control. React owns theme state, mounted disabling, icon changes, and the accessible label.",
+      "html": "<button class=\"ds-theme-toggle\" type=\"button\" aria-label=\"Switch to dark theme\" title=\"Switch to dark theme\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20.5 13.1A8.6 8.6 0 0 1 10.9 3.5a8.6 8.6 0 1 0 9.6 9.6Z\"/></svg></button>",
+      "css": ".ds-theme-toggle{display:inline-flex;width:44px;height:44px;flex:0 0 auto;align-items:center;justify-content:center;padding:0;border:0;border-radius:50%;background:transparent;color:var(--foreground);cursor:pointer;transition:background-color 160ms ease-out}.ds-theme-toggle:hover{background:var(--muted)}.ds-theme-toggle:disabled{cursor:default}.ds-theme-toggle svg{width:21px;height:21px}.ds-theme-toggle:focus-visible{outline:2px solid var(--focus);outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-theme-toggle{transition:none}}"
+    },
+    {
+      "name": "Desktop text navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Desktop text navigation with a current-page underline; the source replaces it with a native disclosure at 720px.",
+      "html": "<nav class=\"ds-navigation\" aria-label=\"Main navigation\"><a href=\"/projects\" aria-current=\"page\">Projects</a><a href=\"/about\">About</a><a href=\"/blog\">Blog</a></nav>",
+      "css": ".ds-navigation{display:flex;align-items:center;gap:clamp(20px,2.5vw,36px)}.ds-navigation a{display:inline-flex;min-height:44px;align-items:center;color:var(--foreground);font-family:var(--type-body);font-size:15px;font-weight:450;text-decoration:none;text-underline-offset:6px}.ds-navigation a:hover,.ds-navigation a[aria-current=page]{text-decoration:underline}.ds-navigation a:focus-visible{outline:2px solid var(--focus);outline-offset:3px}@media(max-width:720px){.ds-navigation{display:none}}"
+    },
+    {
+      "name": "Project selector tab",
+      "kind": "custom",
+      "refersTo": "project-tab",
+      "description": "Selected-state visual sample. The source React component supplies complete tab/panel relationships, roving focus, and Arrow/Home/End behavior.",
+      "html": "<div class=\"ds-project-tabs\" role=\"tablist\" aria-label=\"Selected projects\"><button class=\"ds-project-tab\" type=\"button\" role=\"tab\" aria-selected=\"true\">SafientAI</button></div>",
+      "css": ".ds-project-tabs{display:flex;gap:clamp(24px,5vw,72px);overflow-x:auto;padding:6px 6px 10px;margin-inline:-6px}.ds-project-tab{position:relative;min-height:48px;flex:0 0 auto;padding:0 0 12px;border:0;background:transparent;color:var(--muted-foreground);font-family:var(--type-body);font-size:clamp(18px,1.8vw,23px);font-weight:500;letter-spacing:-0.025em;cursor:pointer}.ds-project-tab::after{position:absolute;inset-block-end:1px;inset-inline:0;height:2px;background:currentColor;content:'';transform:scaleX(0);transform-origin:left;transition:transform 200ms cubic-bezier(0.16,1,0.3,1)}.ds-project-tab:hover,.ds-project-tab[aria-selected=true]{color:var(--foreground)}.ds-project-tab[aria-selected=true]::after{transform:scaleX(1)}.ds-project-tab:focus-visible{outline:2px solid var(--focus);outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-project-tab::after{transition:none}}"
+    },
+    {
+      "name": "Recovery button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled recovery action used by the error page; hover and disabled appearances follow the shared source button.",
+      "html": "<button class=\"ds-button\" type=\"button\">Try again</button>",
+      "css": ".ds-button{display:inline-flex;min-height:44px;align-items:center;justify-content:center;gap:10px;padding:10px 18px;border:1px solid var(--foreground);border-radius:6px;background:var(--foreground);color:var(--background);font-family:var(--type-body);font-size:15px;cursor:pointer;text-decoration:none}.ds-button:hover{background:var(--accent);color:var(--accent-foreground)}.ds-button:focus-visible{outline:2px solid var(--focus);outline-offset:3px}.ds-button:disabled{opacity:.55;cursor:not-allowed}"
+    },
+    {
+      "name": "Clear-filters button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Transparent, bordered reset action used in empty results, with the shared accent hover.",
+      "html": "<button class=\"ds-button ds-secondary\" type=\"button\">Clear filters</button>",
+      "css": ".ds-button{display:inline-flex;min-height:44px;align-items:center;justify-content:center;gap:10px;padding:10px 18px;border:1px solid var(--foreground);border-radius:6px;background:var(--foreground);color:var(--background);font-family:var(--type-body);font-size:15px;cursor:pointer;text-decoration:none}.ds-button:hover{background:var(--accent);color:var(--accent-foreground)}.ds-button:focus-visible{outline:2px solid var(--focus);outline-offset:3px}.ds-button:disabled{opacity:.55;cursor:not-allowed}.ds-secondary{background:transparent;color:var(--foreground)}.ds-secondary:hover{background:var(--accent);color:var(--accent-foreground)}"
+    },
+    {
+      "name": "Native collection fields",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Populated search and native category select. React owns query/category state, conditional clear behavior, and Escape clearing; this is an appearance sample.",
+      "html": "<div class=\"ds-fields\"><div class=\"ds-search\"><label class=\"ds-sr\" for=\"ds-project-search\">Search projects</label><input id=\"ds-project-search\" type=\"search\" value=\"FastAPI\" placeholder=\"Search by project, technology, or problem…\"/><button class=\"ds-clear\" type=\"button\" aria-label=\"Clear search\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 6 12 12M18 6 6 18\"/></svg></button></div><div class=\"ds-select\"><label for=\"ds-category\">Project category</label><select id=\"ds-category\"><option>All categories</option><option>Applied AI</option></select></div></div>",
+      "css": ".ds-fields{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:20px;align-items:end;font-family:var(--type-body)}.ds-search{position:relative;min-width:0}.ds-search input,.ds-select select{width:100%;min-height:52px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--foreground);font-family:var(--type-body);font-size:16px;caret-color:var(--accent)}.ds-search input{padding:12px 50px 12px 16px}.ds-search input::placeholder{color:var(--muted-foreground);opacity:1}.ds-search input::-webkit-search-cancel-button{display:none}.ds-clear{position:absolute;inset-block-start:4px;inset-inline-end:4px;display:flex;width:44px;height:44px;align-items:center;justify-content:center;padding:0;border:0;border-radius:4px;background:transparent;color:var(--foreground);cursor:pointer}.ds-clear:hover{background:var(--muted)}.ds-clear svg{width:24px;height:24px}.ds-select label{display:block;margin-block-end:7px;color:var(--muted-foreground);font-size:13px}.ds-select select{padding:10px 14px}.ds-search input:focus-visible,.ds-select select:focus-visible,.ds-clear:focus-visible{outline:2px solid var(--focus);outline-offset:3px}.ds-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:600px){.ds-fields{grid-template-columns:minmax(0,1fr);gap:14px}}"
+    },
+    {
+      "name": "Topic filter",
+      "kind": "chip",
+      "refersTo": "filter-tag",
+      "description": "Transparent topic-filter buttons with hover wash and a selected border. React supplies selection state; display metadata tags remain plain text.",
+      "html": "<div class=\"ds-filter-tags\" role=\"group\" aria-label=\"Filter by topic\"><button class=\"ds-filter-tag\" type=\"button\" aria-pressed=\"false\">All topics</button><button class=\"ds-filter-tag\" type=\"button\" aria-pressed=\"true\">FastAPI</button></div>",
+      "css": ".ds-filter-tags{display:flex;flex-wrap:wrap;gap:6px 12px}.ds-filter-tag{min-height:44px;padding:8px 12px;border:1px solid transparent;border-radius:4px;background:transparent;color:var(--muted-foreground);font-family:var(--type-body);font-size:14px;cursor:pointer}.ds-filter-tag:hover{color:var(--foreground);background:var(--muted)}.ds-filter-tag[aria-pressed=true]{border-color:var(--foreground);color:var(--foreground)}.ds-filter-tag:focus-visible{outline:2px solid var(--focus);outline-offset:3px}"
+    },
+    {
+      "name": "Project cover and open card",
+      "kind": "card",
+      "refersTo": "project-cover",
+      "description": "Current title/category cover fallback, followed by open card copy and plain metadata; configured product imagery replaces the fallback in React.",
+      "html": "<a class=\"ds-project-card\" href=\"/projects/safientai\"><div class=\"ds-project-visual\"><span class=\"ds-cover-name\">SafientAI</span><span class=\"ds-cover-category\">Applied AI</span><span class=\"ds-cover-notice\">Product imagery to add</span></div><div class=\"ds-project-title\"><h2>SafientAI</h2><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></div><p class=\"ds-project-summary\">An LLM comparison platform with usage metering, subscriptions, and multimodal uploads.</p><ul class=\"ds-project-tags\" aria-label=\"Topics\"><li>FastAPI</li><li>Next.js</li><li>PostgreSQL</li><li>Payments</li></ul><span class=\"ds-project-draft\">Draft case study</span></a>",
+      "css": ".ds-project-card{display:block;color:var(--foreground);font-family:var(--type-body);text-decoration:none}.ds-project-visual{position:relative;display:flex;min-width:0;aspect-ratio:16/10;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(20px,4vw,52px);overflow:hidden;border-radius:4px;background:var(--surface)}.ds-cover-name{max-width:12ch;font-size:clamp(28px,3.1vw,46px);font-weight:550;line-height:1.15;letter-spacing:-.035em;overflow-wrap:anywhere}.ds-cover-category{margin-block-start:18px;color:var(--muted-foreground);font-size:15px}.ds-cover-notice{position:absolute;inset-inline-start:clamp(20px,4vw,52px);inset-block-end:16px;color:var(--muted-foreground);font-size:12px}.ds-project-title{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-block-start:20px}.ds-project-title h2{margin:0;font-size:25px;font-weight:550;line-height:1.4;letter-spacing:-.025em}.ds-project-title svg{width:21px;height:21px;flex-shrink:0;align-self:center}.ds-project-card:hover h2{text-decoration:underline;text-underline-offset:6px}.ds-project-card:focus-visible{outline:2px solid var(--focus);outline-offset:3px}.ds-project-summary{max-width:60ch;margin:12px 0 16px;color:var(--muted-foreground);font-size:16px;line-height:1.75}.ds-project-tags{display:flex;flex-wrap:wrap;gap:6px 14px;padding:0;margin:0;list-style:none;color:var(--muted-foreground);font-size:13px;line-height:1.7}.ds-project-draft{display:block;margin-block-start:12px;color:var(--muted-foreground);font-size:13px}@media(max-width:680px){.ds-project-visual{padding:32px}.ds-cover-notice{inset-inline-start:32px}}"
+    },
+    {
+      "name": "Reading code block",
+      "kind": "custom",
+      "refersTo": "code-block",
+      "description": "Surface-framed code with an Onest copy utility and JetBrains Mono content. React handles clipboard access, polite success/error labels, and the 2500ms reset.",
+      "html": "<div class=\"ds-code-block\"><div class=\"ds-code-tools\"><button class=\"ds-copy\" type=\"button\" aria-live=\"polite\" title=\"Copy code\">Copy code</button></div><pre class=\"ds-pre\" tabindex=\"0\" aria-label=\"Code example\"><code>def receive_webhook(request):\n    event = verify_and_parse(request)\n    receipt = record_receipt_once(event.id, event.payload)\n    schedule_pending_work(receipt.id)\n    return acknowledgement()</code></pre></div>",
+      "css": ".ds-code-block{margin-block:28px;border:1px solid var(--border);border-radius:8px;background:var(--surface);overflow:hidden}.ds-code-tools{display:flex;justify-content:flex-end;padding:2px 8px;border-block-end:1px solid var(--border)}.ds-copy{min-height:40px;padding:6px 10px;border:0;background:transparent;color:var(--muted-foreground);font-family:var(--type-body);font-size:13px;cursor:pointer}.ds-copy:hover{color:var(--foreground)}.ds-pre{max-width:100%;padding:20px;margin:0;overflow-x:auto;color:var(--foreground);font-family:var(--type-code);font-size:14px;line-height:1.8;tab-size:4}.ds-pre code{font:inherit}.ds-copy:focus-visible,.ds-pre:focus-visible{outline:2px solid var(--focus);outline-offset:3px}@media(max-width:600px){.ds-pre{padding:16px;font-size:13px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Personal correspondence",
+    "overview": "Pale sage stationery, deep green ink, Onest, and the owner's natural-color photograph give the portfolio a personal reading rhythm. Typography, open spacing, and understated text links carry that character through the homepage, project collection and case studies, blog collection and articles, About page, and shared navigation and footer. The dark theme changes the paper and ink roles while retaining the same vocabulary.\n\nThis is a **source-derived record of the complete route implementation**, pending the owner's build and rendered review. No approved comp, screenshot, visual ship verdict, or build success exists. Source formatting and a lockfile-only dependency resolution with lifecycle scripts disabled were code-editing steps in this pass; no application build, tests, lint, typecheck, detector, development server, browser, or runtime validation ran. Static review found heading-ID collisions and a missing empty-state `#work` target; targeted source rereads confirmed both corrections. Rendered evidence and owner approval remain pending.\n\nDetailed case-study content, article samples, product imagery, and some personal copy remain visibly marked for owner review. These content placeholders do not indicate unfinished route implementations. Replacement instructions belong in `CONTENT-REPLACEMENT.md`. The hero-specific first-viewport ambition remains in `.impeccable/surfaces/src-features-home-components-hero-section-tsx.md`, not a universal page requirement.",
+    "keyCharacteristics": [
+      "Sage and green semantic colors in both themes.",
+      "Onest for interface and reading; JetBrains Mono for code.",
+      "Flat paper surfaces, fine dividers, and restrained corner radii.",
+      "Original owner-supplied photography with CSS-only presentation cropping.",
+      "Native collection controls, an accessible project tab index, and open reading layouts."
+    ],
+    "rules": [
+      {
+        "name": "The Semantic Ink Rule",
+        "body": "Read color from the current theme's semantic role. Supporting copy, selection, focus, icons, and browser surfaces belong to the same green palette.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Voice Rule",
+        "body": "Use Onest for interface and prose, with JetBrains Mono reserved for code. A registered serif family does not establish a second display voice.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Keep the implemented paper treatment flat; use the existing surface roles, rules, and spacing to separate content.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use the current theme's semantic colors for surfaces, text, focus, selection, controls, and dividers.",
+      "Do preserve Onest for interface and reading, and JetBrains Mono for code.",
+      "Do preserve the original owner-supplied portrait and use CSS for presentation cropping.",
+      "Do retain native field semantics, visible focus, live filter results, and project tab relationships.",
+      "Do keep draft/sample notices visible until the owner verifies replacement content.",
+      "Do retain reduced-motion overrides and contained overflow for code and tables.",
+      "Do treat this record as pending the owner's build and rendered review."
+    ],
+    "donts": [
+      "Don't replace the real portrait with an invented image or destructive crop.",
+      "Don't turn plain metadata tags or the selected-project note into enclosing cards.",
+      "Don't introduce a second display voice merely because a serif font is registered.",
+      "Don't treat illustrative sidecar tonal ramps as shipped palette tokens.",
+      "Don't claim visual approval, first-viewport fit, runtime accessibility, or build success from this source-only record."
+    ]
+  }
+}

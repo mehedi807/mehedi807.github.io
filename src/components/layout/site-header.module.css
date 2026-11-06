@@ -1,0 +1,171 @@
+@layer components {
+  .header {
+    position: relative;
+    z-index: 10;
+    padding-inline: var(--page-gutter);
+  }
+
+  .inner {
+    display: flex;
+    width: 100%;
+    max-width: var(--page-width);
+    min-height: 108px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-inline: auto;
+  }
+
+  .wordmark {
+    display: inline-flex;
+    flex-direction: column;
+    color: var(--foreground);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 0.94;
+    letter-spacing: -0.035em;
+    text-decoration: none;
+  }
+
+  .wordmark span {
+    margin-inline-start: 18px;
+  }
+
+  .navigationGroup,
+  .desktopNav {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigationGroup {
+    gap: clamp(20px, 3vw, 44px);
+  }
+
+  .desktopNav {
+    gap: clamp(20px, 2.5vw, 36px);
+  }
+
+  .desktopNav a,
+  .contactLink {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    color: var(--foreground);
+    font-size: 15px;
+    font-weight: 450;
+    text-decoration: none;
+    text-underline-offset: 6px;
+  }
+
+  .desktopNav a:hover,
+  .contactLink:hover,
+  .desktopNav a[aria-current="page"] {
+    text-decoration: underline;
+  }
+
+  .contactLink {
+    gap: 7px;
+  }
+
+  .contactLink svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .mobileNav {
+    display: none;
+  }
+
+  .skipLink {
+    position: absolute;
+    inset-block-start: 12px;
+    inset-inline-start: var(--page-gutter);
+    z-index: 30;
+    padding: 12px 18px;
+    background: var(--foreground);
+    color: var(--background);
+    transform: translateY(-180%);
+  }
+
+  .skipLink:focus {
+    transform: translateY(0);
+  }
+
+  @media (max-width: 720px) {
+    .inner {
+      min-height: 88px;
+    }
+
+    .desktopNav,
+    .contactLink {
+      display: none;
+    }
+
+    .navigationGroup {
+      gap: 8px;
+    }
+
+    .wordmark {
+      font-size: 20px;
+    }
+
+    .mobileNav {
+      display: block;
+    }
+
+    .menuTrigger {
+      display: flex;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .menuTrigger::-webkit-details-marker {
+      display: none;
+    }
+
+    .menuTrigger:hover {
+      background: var(--muted);
+    }
+
+    .closeIcon,
+    .mobileNav[open] .menuIcon {
+      display: none;
+    }
+
+    .mobileNav[open] .closeIcon {
+      display: block;
+    }
+
+    .mobilePanel {
+      position: absolute;
+      inset-block-start: 100%;
+      inset-inline: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 12px var(--page-gutter) 24px;
+      border-block-end: 1px solid var(--border);
+      background: var(--background);
+    }
+
+    .mobilePanel a {
+      display: flex;
+      min-height: 48px;
+      align-items: center;
+      color: var(--foreground);
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .mobilePanel a:hover,
+    .mobilePanel a[aria-current="page"] {
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+  }
+}

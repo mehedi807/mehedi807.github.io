@@ -1,0 +1,31 @@
+@layer components {
+  .footer {
+    padding: 40px var(--page-gutter) 24px;
+    border-block-start: 1px solid var(--border);
+  }
+  .inner {
+    display: flex;
+    max-width: var(--page-width);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-inline: auto;
+  }
+  .name {
+    color: var(--foreground);
+    font-size: 19px;
+    font-weight: 550;
+    text-decoration: none;
+  }
+  .inner p {
+    margin: 8px 0 0;
+    color: var(--muted-foreground);
+    font-size: 14px;
+  }
+  .bottom {
+    max-width: var(--page-width);
+    margin: 32px auto 0;
+    color: var(--muted-foreground);
+    font-size: 13px;
+  }
+}

@@ -25,14 +25,38 @@
 }
 
 @layer base {
+  html {
+    scroll-padding-block-start: 24px;
+    scrollbar-color: var(--scroll-thumb) var(--background);
+    scrollbar-width: thin;
+  }
+
   body {
+    margin: 0;
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--type-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--selection);
+    color: var(--selection-foreground);
+  }
+
+  input,
+  textarea {
+    caret-color: var(--accent);
   }
 
   :focus-visible {
     outline: 2px solid var(--focus);
     outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 }

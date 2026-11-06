@@ -1,8 +1,36 @@
-# Next.js static baseline
+# Mehedi Hasan — portfolio
 
-A minimal, reusable Next.js App Router baseline for fully static sites. It uses
-TypeScript, Tailwind CSS, GSAP, and Motion for React with exact dependency
-versions.
+A static Next.js App Router portfolio for backend engineering and applied AI.
+It includes the homepage, About, searchable/filterable project and blog indexes,
+MDX detail pages, theme switching, custom content blocks, and static metadata.
+
+Read [CONTENT-REPLACEMENT.md](CONTENT-REPLACEMENT.md) before publication. It lists
+the Cinderella draft case study, supplied imagery, domain setting, and résumé
+replacement. Cinderella is the only project entry, and the blog currently has
+no articles. `DESIGN.md` records the implemented system and its pending
+rendered-review status.
+
+## Source organization
+
+- `src/app`: routes, layouts, errors, sitemap, and robots.
+- `src/features`: home, About, projects, and blog components and logic.
+- `src/components`: shared layout, controls, and MDX blocks.
+- `src/content`: trusted local MDX articles and case studies.
+- `src/config`: identity, navigation, contact, and public site settings.
+- `src/lib`: content parsing, MDX compilation, search, and metadata helpers.
+- `public`: the real portrait and owner-supplied media/files.
+
+All agreed routes have code. Initial content includes explicitly labelled
+placeholders so the complete site can be reviewed. No build or application
+validation was run during this code-only implementation pass.
+
+## First setup
+
+Install the pinned dependencies with `pnpm install --frozen-lockfile`. Copy
+`.env.example` to `.env.local`, replace `NEXT_PUBLIC_SITE_URL` with the real
+production origin, and optionally set the résumé URL. An unset/example origin
+keeps the site noindex and leaves the sitemap empty. MDX compiles at export
+time; no Next.js server or external content service is needed after deployment.
 
 ## Requirements
 
@@ -77,7 +105,7 @@ states. Keep Tailwind's default breakpoints and spacing scale until a project
 needs to change them. Use colocated `*.module.css` files for complex selectors,
 keyframes, and effects that are clearer in CSS.
 
-`src/app/tokens.css` defines neutral semantic colors and typography roles.
+`src/app/tokens.css` defines semantic sage/green colors and typography roles.
 `src/app/globals.css` maps them to Tailwind utilities such as `bg-background`,
 `text-foreground`, `bg-surface`, `text-muted-foreground`, `bg-accent`,
 `text-accent-foreground`, `border-border`, `outline-focus`, `font-body`,
@@ -99,7 +127,7 @@ In a Client Component, import `useTheme` from `next-themes`. Call
 selection. `theme` is the selected preference, and `resolvedTheme` is the actual
 light or dark palette. These values are unavailable during static rendering;
 wait until the component mounts before rendering controls whose markup depends
-on them. Theme controls can be designed with the project's components later.
+on them. The shared header already includes a mounted, accessible theme toggle.
 
 The provider applies the theme before hydration to avoid a light-theme flash.
 The root `<html>` uses `suppressHydrationWarning` because that attribute changes
@@ -121,7 +149,7 @@ the global stylesheet again.
 
 | Family | Default typeface | Tailwind utility |
 | ------ | ---------------- | ---------------- |
-| Sans   | Manrope          | `font-sans`      |
+| Sans   | Onest            | `font-sans`      |
 | Serif  | Source Serif 4   | `font-serif`     |
 | Mono   | JetBrains Mono   | `font-mono`      |
 

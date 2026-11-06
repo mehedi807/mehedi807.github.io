@@ -1,0 +1,193 @@
+@layer components {
+  .button {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border: 1px solid var(--foreground);
+    border-radius: 6px;
+    background: var(--foreground);
+    color: var(--background);
+    font: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .button:hover {
+    background: var(--accent);
+    color: var(--accent-foreground);
+  }
+  .button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+  .secondary {
+    background: transparent;
+    color: var(--foreground);
+  }
+  .search {
+    position: relative;
+    min-width: 0;
+  }
+  .search input {
+    width: 100%;
+    min-height: 52px;
+    padding: 12px 50px 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    color: var(--foreground);
+    font: inherit;
+    font-size: 16px;
+  }
+  .search input::placeholder {
+    color: var(--muted-foreground);
+    opacity: 1;
+  }
+  .search input::-webkit-search-cancel-button {
+    display: none;
+  }
+  .clearSearch {
+    position: absolute;
+    inset-block-start: 4px;
+    inset-inline-end: 4px;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--foreground);
+    cursor: pointer;
+  }
+  .clearSearch:hover {
+    background: var(--muted);
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+  }
+  .filterTag {
+    min-height: 44px;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--muted-foreground);
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .filterTag:hover {
+    color: var(--foreground);
+    background: var(--muted);
+  }
+  .filterTag[aria-pressed="true"] {
+    border-color: var(--foreground);
+    color: var(--foreground);
+  }
+  .tag {
+    display: inline-block;
+    color: var(--muted-foreground);
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .tagList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .empty {
+    padding: 56px 20px;
+    text-align: center;
+  }
+  .empty h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .empty p {
+    max-width: 54ch;
+    margin: 14px auto 22px;
+    color: var(--muted-foreground);
+    line-height: 1.7;
+  }
+  .sectionHeading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-block-end: 28px;
+  }
+  .sectionHeading h2 {
+    margin: 0;
+    font-size: clamp(25px, 2.8vw, 34px);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+  }
+  .sectionHeading a {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 10px;
+    color: var(--foreground);
+    text-underline-offset: 6px;
+  }
+  .sectionHeading svg {
+    width: 20px;
+    height: 20px;
+  }
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .contacts a {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 7px;
+    color: var(--foreground);
+    font-size: 15px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+  .contacts svg {
+    width: 16px;
+    height: 16px;
+  }
+  .notice {
+    padding: 18px 20px;
+    margin-block: 24px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .notice strong {
+    font-weight: 600;
+  }
+  .notice p {
+    margin: 7px 0 0;
+    color: var(--muted-foreground);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .status {
+    color: var(--muted-foreground);
+    font-size: 13px;
+    font-weight: 500;
+  }
+}

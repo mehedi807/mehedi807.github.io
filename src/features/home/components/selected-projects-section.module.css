@@ -1,0 +1,211 @@
+@layer components {
+  .section {
+    padding: 0 var(--page-gutter) 64px;
+    scroll-margin-block-start: 32px;
+  }
+
+  .inner {
+    width: 100%;
+    max-width: var(--page-width);
+    margin-inline: auto;
+    padding-block-start: 30px;
+    border-block-start: 1px solid var(--border);
+  }
+
+  .heading {
+    margin: 0 0 23px;
+    font-size: 24px;
+    font-weight: 550;
+    line-height: 1.3;
+    letter-spacing: -0.025em;
+  }
+
+  .tabs {
+    display: flex;
+    gap: clamp(24px, 5vw, 72px);
+    overflow-x: auto;
+    padding: 6px 6px 10px;
+    margin-inline: -6px;
+  }
+
+  .tab {
+    position: relative;
+    min-height: 48px;
+    flex: 0 0 auto;
+    padding: 0 0 12px;
+    border: 0;
+    background: transparent;
+    color: var(--muted-foreground);
+    font: inherit;
+    font-size: clamp(18px, 1.8vw, 23px);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    cursor: pointer;
+  }
+
+  .tab::after {
+    position: absolute;
+    inset-block-end: 1px;
+    inset-inline: 0;
+    height: 2px;
+    background: currentColor;
+    content: "";
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .tab:hover,
+  .tab[aria-selected="true"] {
+    color: var(--foreground);
+  }
+
+  .tab[aria-selected="true"]::after {
+    transform: scaleX(1);
+  }
+
+  .panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(180px, 0.65fr);
+    min-height: 210px;
+    gap: 56px;
+    padding-block: 25px 8px;
+    animation: note-arrive 240ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .panel[hidden] {
+    display: none;
+  }
+
+  .projectPreview {
+    position: relative;
+    display: block;
+    grid-column: 1 / -1;
+    aspect-ratio: 2 / 1;
+    overflow: hidden;
+    border-radius: 4px;
+    background: var(--surface);
+  }
+
+  .projectPreview img {
+    object-fit: contain;
+  }
+
+  .draft {
+    display: block;
+    margin-block-start: 12px;
+    color: var(--muted-foreground);
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .projectNote h3 {
+    max-width: 32ch;
+    margin: 0;
+    font-size: clamp(22px, 2.1vw, 28px);
+    font-weight: 480;
+    line-height: 1.4;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+
+  .projectNote p {
+    max-width: 65ch;
+    margin: 12px 0 0;
+    color: var(--muted-foreground);
+    font-size: 16px;
+    line-height: 1.75;
+    text-wrap: pretty;
+  }
+
+  .projectDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-block-start: 6px;
+  }
+
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 5px;
+    padding: 0;
+    margin: 0;
+    color: var(--muted-foreground);
+    font-size: 14px;
+    line-height: 1.7;
+    list-style: none;
+  }
+
+  .projectLink {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 10px;
+    color: var(--foreground);
+    font-size: 15px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+
+  .projectLink svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .emptyNote {
+    margin: 0 0 12px;
+    color: var(--muted-foreground);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  @keyframes note-arrive {
+    from {
+      opacity: 0.85;
+      transform: translateY(5px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 720px) {
+    .inner {
+      padding-block-start: 24px;
+    }
+
+    .heading {
+      margin-block-end: 16px;
+      font-size: 21px;
+    }
+
+    .panel {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 14px;
+      padding-block-start: 20px;
+    }
+
+    .projectDetails {
+      gap: 6px;
+    }
+
+    .projectNote p {
+      line-height: 1.65;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .panel {
+      animation: none;
+    }
+
+    .tab::after {
+      transition: none;
+    }
+  }
+}

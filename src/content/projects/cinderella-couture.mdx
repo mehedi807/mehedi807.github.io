@@ -1,0 +1,68 @@
+---
+title: Cinderella Couture
+headline: The moving parts behind an online store.
+summary: An e-commerce platform connecting semantic discovery, checkout, inventory, fulfillment, and shipping.
+category: Commerce
+tags: [Django, Next.js, pgvector, Payments]
+role: Backend and commerce integrations
+year: Year to confirm
+featured: true
+order: 1
+placeholder: true
+draft: true
+cover: /images/projects/cinderella/image.png
+coverAlt: Cinderella Couture storefront showing featured evening and wedding gowns.
+liveUrl: https://www.cinderellacouturetx.com/
+---
+
+<Figure
+  src="/images/projects/cinderella/image.png"
+  alt="Cinderella Couture storefront showing featured evening and wedding gowns."
+  caption="The storefront’s featured product collection."
+  width={1905}
+  height={967}
+/>
+
+## The product
+
+Cinderella Couture is an e-commerce platform for a fashion retailer. Its backend
+connects product discovery, payments, order fulfillment, inventory, and shipping.
+
+## What I worked on
+
+- Django and Next.js commerce functionality with order fulfillment and inventory tracking.
+- Semantic product search using pgvector embeddings for natural-language discovery.
+- Square and PayPal payment integrations.
+- Automated shipping-label generation through ShipStation.
+
+## Connecting discovery and fulfillment
+
+Search, checkout, and fulfillment have distinct responsibilities. An effective
+case study can show how those responsibilities met at the application boundary,
+and how external services affected the design.
+
+<ArchitectureDiagram
+  title="An illustrative commerce journey"
+  steps={[
+    "Product discovery",
+    "Checkout",
+    "Order workflow",
+    "Fulfillment and shipping",
+  ]}
+  caption="Draft product-level journey, not a verified deployment diagram."
+/>
+
+## Decisions and outcomes
+
+<Callout title="Add verified detail">
+  Explain your exact contribution, one integration challenge, how it was
+  resolved, and an outcome you can support. Dates, architecture, and results
+  still need owner review.
+</Callout>
+
+## Explore the product
+
+<Demo title="Cinderella Couture" href="https://www.cinderellacouturetx.com/">
+  Visit the storefront. Use approved screenshots and confirm current links
+  before publishing the final case study.
+</Demo>

@@ -1,6 +1,6 @@
-import { JetBrains_Mono, Manrope, Source_Serif_4 } from "next/font/google";
+import { JetBrains_Mono, Onest, Source_Serif_4 } from "next/font/google";
 
-export const fontSans = Manrope({
+export const fontSans = Onest({
   variable: "--font-family-sans",
   subsets: ["latin"],
   weight: "variable",

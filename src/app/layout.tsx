@@ -1,4 +1,8 @@
+import type { Metadata } from "next";
 import type { ReactNode } from "react";
+
+import { site } from "@/config/site";
+import { pageMetadata } from "@/lib/metadata";
 
 import { fontMono, fontSans, fontSerif } from "./fonts";
 import { MotionProvider } from "./motion-provider";
@@ -9,6 +13,15 @@ import "./globals.css";
 type RootLayoutProps = Readonly<{
   children: ReactNode;
 }>;
+
+export const metadata: Metadata = {
+  ...pageMetadata({
+    title: site.title,
+    description: site.description,
+    path: "/",
+  }),
+  title: { default: site.title, template: `%s — ${site.name}` },
+};
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (

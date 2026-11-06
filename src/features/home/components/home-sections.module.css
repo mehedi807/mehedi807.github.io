@@ -1,0 +1,52 @@
+@layer components {
+  .section {
+    padding: 40px var(--page-gutter) 64px;
+  }
+  .contact {
+    padding: 64px var(--page-gutter) 88px;
+    background: var(--surface);
+  }
+  .contactInner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 56px;
+  }
+  .contact h2 {
+    max-width: 16ch;
+    margin: 0;
+    font-size: clamp(32px, 4.4vw, 54px);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+  .contact p {
+    max-width: 48ch;
+    margin: 0 0 20px;
+    color: var(--muted-foreground);
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  .email {
+    display: inline-block;
+    margin-block-end: 20px;
+    color: var(--foreground);
+    font-size: clamp(18px, 2.1vw, 26px);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 7px;
+    overflow-wrap: anywhere;
+  }
+  @media (max-width: 680px) {
+    .contactInner {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 24px;
+    }
+    .section {
+      padding-block: 24px 48px;
+    }
+    .contact {
+      padding-block: 48px 56px;
+    }
+  }
+}

@@ -73,10 +73,11 @@ confirmed scope.
 - Files and folders use kebab-case; React component names use PascalCase.
 - Search/filter controls are shared between the project and blog features;
   collection-specific filtering logic belongs to each feature.
-- The implementation is currently a scaffold. Feature files and added route
-  files are empty, the root page returns `null`, and MDX publishing and search
-  are not implemented yet. Empty route files need implementations before the
-  app's route validation and build checks can pass.
+- All agreed routes have code, including the complete homepage, About, both
+  searchable/filterable collection indexes, and statically generated MDX detail
+  pages. Shared content blocks, theme controls, navigation, footer, error/not-found
+  recovery, and metadata are implemented. Build and rendered verification remain
+  the owner's responsibility under the explicit code-only instruction.
 
 ## Brand Commitments
 
@@ -85,8 +86,9 @@ confirmed scope.
 - The portfolio should feel personal and distinctive. The owner identified an
   AI-generated-looking presentation as a reason to reject an otherwise appealing
   mockup.
-- No proposed visual concept, headline, palette, or typography has been approved
-  for implementation. The baseline's default styling is setup infrastructure.
+- The owner authorized direct implementation of the whole website using
+  Impeccable, with a real portrait and documented placeholders for missing content.
+  The coded design awaits the owner's review.
 
 ## Evidence on Hand
 
@@ -102,10 +104,17 @@ confirmed scope.
     quotes, and background processing.
   - Cinderella Couture: commerce, semantic product search, payments, inventory,
     and shipping integration.
-- Featured-project selection is not finalized. The resume supplies material for
-  case studies; it does not require reproducing every detail in the portfolio.
-- The repository has content and media directories but no authored MDX entries
-  or portfolio media assets yet.
+- Cinderella Couture is the only retained project and remains a visible draft
+  case study. The owner requested removal of the other project entries and all
+  sample blog articles. Its screenshot at
+  `public/images/projects/cinderella/image.png` is used on the homepage, project
+  index, and detail page. The empty homepage writing section is hidden;
+  `/blog` remains available for future articles.
+- The owner supplied the transparent portrait at
+  `public/images/profile/mehedi.png` for the homepage and About page. The original
+  `public/images/mehedi.jpeg` is retained for social previews. No public resume
+  PDF has been supplied. `CONTENT-REPLACEMENT.md` records remaining placeholders
+  and their edit paths.
 - An externally generated hero mockup was discussed, but its image has not been
   supplied in this workspace and it was not approved for implementation.
 
@@ -119,6 +128,9 @@ confirmed scope.
 
 ## Open Decisions
 
-- Blog topic boundaries, article content, and the final filter taxonomies.
-- Final case-study content, featured projects, media, and public resume asset.
-- Final portfolio copy and approved visual direction.
+- Owner-authored articles, final topics, and filter taxonomy; no sample articles
+  remain in the content collection.
+- Verified case-study detail, years, outcomes, project media, working-approach
+  wording, featured-project selection, and the public resume asset.
+- Production origin, current external project URLs, and final owner approval of
+  the coded design and copy.
